@@ -1,0 +1,11 @@
+rule cxx
+ command=g++ -c $in -o  $out
+
+rule link
+ command=g++ -o $out $in
+
+build copy_backward.o:cxx copy_backward.cpp
+
+build copy_backward:link copy_backward.o
+
+default copy_backward
