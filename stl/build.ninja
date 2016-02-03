@@ -8,4 +8,8 @@ build copy_backward.o:cxx copy_backward.cpp
 
 build copy_backward:link copy_backward.o
 
+build equal_range.o:cxx equal_range.cpp
+build equal_range:link equal_range.o
+
+default equal_range
 default copy_backward
