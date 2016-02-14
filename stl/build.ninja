@@ -10,6 +10,10 @@ build copy_backward:link copy_backward.o
 
 build equal_range.o:cxx equal_range.cpp
 build equal_range:link equal_range.o
+build find_end.o: cxx find_end.cpp
+build find_end:link find_end.o
+
+default find_end
 
 default equal_range
 default copy_backward
