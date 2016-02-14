@@ -12,6 +12,10 @@ build equal_range.o:cxx equal_range.cpp
 build equal_range:link equal_range.o
 build find_end.o: cxx find_end.cpp
 build find_end:link find_end.o
+build for_each.o:cxx for_each.cpp
+build for_each:link for_each.o
+
+default for_each
 
 default find_end
 
