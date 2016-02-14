@@ -13,5 +13,6 @@ int main()
     ivec.push_back(ix);
   void (*pfi)(int) = print_elements;
   for_each(ivec.begin(), ivec.end(), pfi);
+  for_each(ivec.begin(), ivec.end(), &print_elements<int>);
   return 0;
 }
