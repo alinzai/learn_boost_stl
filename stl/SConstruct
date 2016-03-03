@@ -1,0 +1,3 @@
+Program('max_element','max_element.cpp')
+obj = Object('for_each.cpp')
+Program('for_each', list(obj))
