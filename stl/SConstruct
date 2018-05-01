@@ -1,5 +1,9 @@
-Program('max_element','max_element.cpp')
+env = Environment()
+env.Append(CXXFLAGS = '-std=c++11')
+
+env.Program('max_element','max_element.cpp')
 obj = Object('for_each.cpp')
-Program('for_each', list(obj))
-Program('remove', 'remove.cpp')
-Program('random_shuffle', 'random_shuffle.cpp')
+env.Program('for_each', list(obj))
+env.Program('remove', 'remove.cpp')
+env.Program('random_shuffle', 'random_shuffle.cpp')
+env.Program('test_lamba', 'test_lamba.cpp' )
